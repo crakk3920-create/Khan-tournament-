@@ -1,1 +1,49 @@
 
+<div class="admin-panel">
+  <style>
+    .admin-card { background: #1a1a2e; color: #fff; padding: 25px; border-radius: 12px; max-width: 600px; font-family: sans-serif; }
+    .input-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; color: #94a3b8; }
+    input, select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: white; }
+    .btn-create { background: #e11d48; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+    .btn-create:hover { background: #be123c; }
+  </style>
+
+  <div class="admin-card">
+    <h2>🏆 Create Free Fire Match</h2>
+    <form id="tournamentForm">
+      <div class="input-group">
+        <label>Match Title</label>
+        <input type="text" placeholder="e.g. Sunday Mega Clash">
+      </div>
+      
+      <div style="display: flex; gap: 10px;">
+        <div class="input-group" style="flex: 1;">
+          <label>Entry Fee (₹)</label>
+          <input type="number" placeholder="50">
+        </div>
+        <div class="input-group" style="flex: 1;">
+          <label>Total Prize (₹)</label>
+          <input type="number" placeholder="1000">
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Map</label>
+        <select>
+          <option>Bermuda</option>
+          <option>Purgatory</option>
+          <option>Kalahari</option>
+          <option>Nexterra</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Match Schedule (Date & Time)</label>
+        <input type="datetime-local">
+      </div>
+
+      <button type="submit" class="btn-create">Publish Tournament</button>
+    </form>
+  </div>
+</div>
